@@ -1,47 +1,61 @@
-import { faFacebook, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Outlet } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import Nav from './Nav.module.css';
 
-function navigation() {
+
+function Navigation() {
+
+  const [showMediaIcons,setShowMediaIcons] =useState(false)
+
+  const handleClick =()=>{
+    setShowMediaIcons(!showMediaIcons)
+
+  }
+
+  
     return (
-        <div className={Nav.intro}>
-            <div className={Nav.container}>
-                
+        
+    <div className={Nav.main}>
+      
+      <div className={Nav.container}>
+           <div className={Nav.menubar}>
+           <li onClick={handleClick} className={Nav.bar}><FontAwesomeIcon icon={faBars}/></li>
+           </div>
+                 
+            <ul className={showMediaIcons ?Nav.menulink : Nav.menu}>
+               
 
-                <FontAwesomeIcon icon={faFacebook} className={Nav.font}/> <FontAwesomeIcon icon={faWhatsapp} className={Nav.font}/> <FontAwesomeIcon icon={faTwitter} className={Nav.font}/>
-
-                <p>Gmail:forhadhridoy.43@gmail.com</p>
-                <p className={Nav.para}><FontAwesomeIcon icon={faPhone}  className={Nav.font1}/>+1850859161</p>
-            </div>
-            
-            <div className={Nav.navigation}>
-
-        <nav className={Nav.navbar}>
-            <ul>
-                
-                <li><Link to="/home" className={Nav.home}>Home</Link>
+                <li className={Nav.item}><Link to="/home" className={Nav.home}>Home</Link>
                 </li>
-                <li>
-                <Link to="/services" className={Nav.messages}>Our Services </Link>
+                <li className={Nav.item}>
+                <Link to="/about" className={Nav.messages}>About Us</Link>
                 </li>
-                <li>
-                <Link to="/appoitment" className={Nav.orders}>Doctors Appoitment</Link>
+                <li className={Nav.item}>
+                <Link to="/departments" className={Nav.orders}>Departments</Link>
                 </li>
-                <li>
+                <li className={Nav.item}>
+                <Link to="/doctor" className={Nav.orders}>Doctor</Link>
+                </li>
+                <li className={Nav.item}>
+                <Link to="/blog" className={Nav.orders}>Blog</Link>
+                </li>
+                <li className={Nav.item}>
+                <Link to="/contact" className={Nav.orders}>Contact</Link>
+                </li>
+                <li className={Nav.item}>
                 <Link to="/signup"className={Nav.cart}>Signup</Link>
                 </li>
             </ul>
-        </nav>
         
-        </div>
         <div className="content">
         <Outlet />
       </div>
             
-        </div>
+      </div>
+    </div>
     );
 }
 
-export default navigation;
+export default Navigation;

@@ -1,67 +1,81 @@
-import 'bootstrap/dist/css/bootstrap.css';
+
+import { faFacebook, faInstagram, faSkype, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import nine from '../img/09.jpg';
+import ten from '../img/10.jpg';
+import eleven from '../img/11.jpg';
 import Home from './Home.module.css';
+
 
 function Home6() {
     return (
-       <div className={Home.intro6}>
-    
 
 
-        <Carousel className={Home.container7}>
-
+    <div className={Home.main4}>
+      <h1>Our Doctors</h1>
+       <div className={Home.card}>
+       <div className={Home.container5}>
+     
+      <div className={Home.item6}>
+      <img src={nine}/>
+      <div className={Home.overlay}>
+       <div className={Home.icon6}><FontAwesomeIcon icon={faFacebook} className={Home.icon7}/> <FontAwesomeIcon icon={faTwitter} className={Home.icon7}/> <FontAwesomeIcon icon={faInstagram} className={Home.icon7}/> <FontAwesomeIcon icon={faSkype} className={Home.icon7}/></div>
+       </div>
+       <div className={Home.text4}>
+       <h4><b>Mickel Jon</b></h4> 
+        <p>CEO and founder</p> 
+       </div>
        
-        <Carousel.Item interval={3000}>
-            <h3>What Our Users Have to say</h3>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-          
-       
-          <Carousel.Caption>
-          </Carousel.Caption>
-        </Carousel.Item>
-       
+      </div>
+      
+    </div>    
 
-       
-        <Carousel.Item interval={3000}>
-    
-               
-            <h3>What Our Users Have to say</h3>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-          
-          <Carousel.Caption>
-          </Carousel.Caption>
-        </Carousel.Item>
-        
+    <div className={Home.container5}>
 
+     
+      <div className={Home.item6}>
+      <img src={ten}/>
+      <div className={Home.overlay}>
+       <div className={Home.icon6}><FontAwesomeIcon icon={faFacebook} className={Home.icon7}/> <FontAwesomeIcon icon={faTwitter} className={Home.icon7}/> <FontAwesomeIcon icon={faInstagram} className={Home.icon7}/> <FontAwesomeIcon icon={faSkype} className={Home.icon7}/></div>
+       </div>
+       <div className={Home.text4}>
+       <h4><b>Hilari Linkton</b></h4> 
+        <p>Laboratorist</p> 
+
+       </div>
+       
+      </div>
+    </div>   
+
+      <div className={Home.container5} id={Home.unic}>
 
       
-        <Carousel.Item interval={3000}>
-       
-  
-         
-            <h3>What Our Users Have to say</h3>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+      <div className={Home.item6}>
+      <img src={eleven}/>
+      <div className={Home.overlay}>
+       <div className={Home.icon6}> <FontAwesomeIcon icon={faFacebook} className={Home.icon7}/> <FontAwesomeIcon icon={faTwitter} className={Home.icon7}/> <FontAwesomeIcon icon={faInstagram} className={Home.icon7}/> <FontAwesomeIcon icon={faSkype} className={Home.icon7}/></div>
+       </div>
+       <div className={Home.text4}>
+       <h4><b>Hilari Linkton</b></h4> 
+        <p>psycologist</p> 
+
+       </div>
+        
+      </div>
+    </div>   
+
+
+     </div> 
      
-          <Carousel.Caption>
-          </Carousel.Caption>
-        </Carousel.Item>
-  
-        <Carousel.Item >
-    
-  
-          <Carousel.Caption interval={500}>
-            <h3>What Our Users Have to says</h3>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-          </Carousel.Caption>
-          <Carousel.Caption>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-         
-        </div>
-       
-              
+     <div className={Home.button5}>
+      <button id={Home.btn1}>All Doctors</button>
+      <button id={Home.btn2}>TimeTable</button>
+      </div>
+
+     
+
+    </div>
        
     );
 }

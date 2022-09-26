@@ -1,33 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Home from './Home.module.css';
 
 
+
 function Home1() {
-    const[text,setText] =useState('')
-    const[text1,setText1] =useState('')
     return (
-        <div className={Home.intro}>
-            <div className={Home.container}>
+        <div className={Home.container}>
+            <div className={Home.item}>
+               <div className={Home.text}>
+                <h1 className={Home.header}>Unic Hospital</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor  </p>
+                <div className={Home.btn}>
+                    <button className={Home.button1}>DEPARTMENTS</button>
+                    <button className={Home.button2}>OUR DOCTORS</button>
+                </div>
+               </div>
 
                
-                
-                <form>
-                <select value={text1}  onChange={(e)=>setText1(e.target.value)}>
-                 <option value="Dhaka">Dhaka</option>
-                 <option value="Rajsahi">Rajsahi</option>
-                 <option value="Khulna">chattgaram</option> 
-                 <option value="Khulna">Cumilla</option>
-                 <option value="Khulna">Sylet</option>
-                 <option value="Khulna">Khulna</option>
-                 <option value="Khulna">barishal</option>
-
-                </select>
-
-                <input type="text" value={text} onChange={(e)=>setText(e.target.value)} placeholder="Search doctor,Hospital,Specality or Treatment"/>
-                </form>
 
             </div>
-    
+
+
             
         </div>
     );

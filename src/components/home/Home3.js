@@ -1,73 +1,46 @@
 import React from 'react';
-import child from '../img/child.jpg';
-import depression from '../img/depression.jpg';
-import fever from '../img/fever.jpg';
-import performace from '../img/performance.jpg';
-import period from '../img/period.jpg';
-import pimple from '../img/pimple.jpg';
+import bulding from '../img/bulding.jpg';
 import Home from './Home.module.css';
 
 function Home3() {
     return (
-        <div className={Home.main}>
-        <h3>Consult top doctors online for any health concern</h3>
-        <p>Private online consultations with verified doctors in all specialists</p>
-        
-        <div className={Home.intro3}>
-            <div className={Home.container4}>
+        <div className={Home.container2}>
+
             
-            <img src={period}/>
-            <p>Period doubt or pregnancy</p>
-            <button>CONSULT NOW</button>
+            <div className={Home.item2}>
 
-            </div>
+                <img src={bulding}/>
+                
+           </div>
 
-            <div className={Home.container4}>
+
+
+           <div className={Home.item2}>
+            <h2>
+                Unic hospital
+
+            </h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum.
+            </p>
+
+            <li> Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.</li>
+
+            <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.</li>
+
+            <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula.</li>
             
-            <img src={pimple}/>
-            <p>Acne,pimple or sckin issues</p>
-            <button>CONSULT NOW</button>
-
-            </div>
-
-            <div className={Home.container4}>
-            
-            <img src={performace}/>
-            <p>Performance issue in bed</p>
-            <button>CONSULT NOW</button>
-
-            </div>
-
-            <div className={Home.container4}>
-            
-            <img src={fever}/>
-            <p>Cold ,cough or fever</p>
-            <button>CONSULT NOW</button>
-
-            </div>
-
-            <div className={Home.container4}>
-            
-            <img src={child}/>
-            <p>Child not felling well</p>
-            <button>CONSULT NOW</button>
+            <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices.</li>
+            <div className={Home.button3}>
+                <button id={Home.appo}>Appoitment</button>
+                <button id={Home.time}>TimeTable</button>
 
             </div>
 
 
-            <div className={Home.container4}>
-            
-            <img src={depression}/>
-            <p>depression and anexioty</p>
-            <button>CONSULT NOW</button>
+                </div>
 
-            </div>
-            
-            
-           
-
-            
-        </div>
+      
         </div>
     );
 }

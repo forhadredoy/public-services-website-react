@@ -1,36 +1,62 @@
 import React from 'react';
-import corona from '../img/corona.jpg';
-import vege from '../img/vege.jpg';
+import eight from '../img/08.jpg';
 import Home from './Home.module.css';
+
 
 function Home5() {
     return (
-        <div className={Home.intro5}> 
-        <div className={Home.container6}>
-            <h2>Read top articles from health experts</h2>
-            <p>Health articles that keep you informed about good health practices and achieve your goals.</p>
-            <button>See all articles</button>
+        <div className={Home.container4}>
 
-        </div>
 
-        <div className={Home.container6}>
-            <img src ={corona}/>
-            <p>CORONA VIRUS</p>
-            <h3>12 conrona virus myths and fact thats you should be aware of</h3>
-            <p>Dr Diano Borgio</p>
+            <div className={Home.item4} >
+                <img src={eight}/>
 
             </div>
-            
 
-            <div className={Home.container6}>
-                <img src={vege}/>
-                <p>VITAMINS AND SUppLEMENTS</p>
-                <h3>Eating right to build immunity Against cold and viral imfections</h3>
-                <p>Dr diano borgio</p>
-            
 
+
+            <div className={Home.item5}>
+                <h1>Why Choose US</h1>
+                
+                <div className={Home.unitem}>
+                <div className={Home.element}>
+                    <h2><span>01</span></h2>
+                    <h1>Qualified Doctors</h1>
+                    <p>Lorem ipsum dolor sit amet consect rutrum dignissim et neque id.</p>
+
+                </div>
+
+                <div className={Home.element}>
+                    <h2>02</h2>
+                    <h1>Emergency 24/7</h1>
+                    <p>Lorem ipsum dolor sit amet consect rutrum dignissim et neque id.</p>
+
+                </div>
+
+
+                <div className={Home.element}>
+                    <h2>03</h2>
+                    <h1> Technology</h1>
+                    <p>Lorem ipsum dolor sit amet consect rutrum dignissim et neque id.</p>
+
+                </div>
+
+
+                <div className={Home.element}>
+                    <h2>04</h2>
+                    <h1>Pharmacy</h1>
+                    <p>Lorem ipsum dolor sit amet consect rutrum dignissim et neque id.</p>
+
+                </div>
+
+
+                </div>
+
+              
             </div>
+
             
+
         </div>
     );
 }
